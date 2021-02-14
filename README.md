@@ -1,0 +1,1 @@
+Goal is to deconstruct a web page, then rebuild it using tools learned in coursework to date.
