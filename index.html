@@ -2,25 +2,61 @@
 <html lang="en">
     <head>
         <style>
-            .header {
-                display: grid;
-                grid-template-columns: 60px 60px 300px 60px 60px;
+            body {
+                font-family: Arial;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                /* background-color: blue; */
+            }
+
+            .header-left {
+                display: flex;
+                /* background-color: pink; */
+            }
+
+            .header-right {
+                display: flex;
+                /* background-color: pink; */
+            }
+
+            .header-txt-items {
+                width: 5em;
+                flex-basis:auto;
+                text-align:center;
+            }
+
+            .header-img-items {
+                width:25%;
+                margin: auto;
+
+            }
+
+            .google-logo {
+                margin:auto;
+                width: 50%;
             }
         </style>
     </head>
     
 <header>
-<div class="header">
-    <div>About</div>
-    <div>Store</div>
-    <div></div>
-    <div>Gmail</div>
-    <div>Images</div>
-</div>
+    <div class="header-left">
+        <div class="header-txt-items"><p>About</p></div>
+        <div class="header-txt-items"><p>Store</p></div>
+    </div>
+
+    <div class="header-right">
+        <div class="header-txt-items"><p>Gmail</p></div>
+        <div class="header-txt-items"><p>Images</p></div>
+        <div class="header-img-items"><img src="http://www.norsemathology.org/wiki/images/2/2c/Dot-grid-3x3.png" alt="other options" width="30" height="30"></div>
+        <div class="header-img-items"><img src="https://nineplanets.org/wp-content/uploads/2019/09/earth.png" alt="other options" width="60"></div>
+    </div>
 </header>
 
     <body>
-        <div id="google-logo">
+        <div class="google-logo" id="google-logo">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="the classic google logo">
         </div>
         <form>
@@ -30,7 +66,6 @@
                         type="text"
                         placeholder="">
 
-            
             <input  type="submit"
                     id="google-submit"
                     value="Google Search">
